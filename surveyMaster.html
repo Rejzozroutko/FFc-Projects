@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>surveyMaster</title>
+  <link rel="stylesheet" href="css/bootstrap4.min.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
+  <link  type= "text/css" rel="stylesheet" href="main.css">
+</head>
+
+<body class="main-grid">
+  <div class="container-grid header">
+    <span class="text-element text-1">
+      <span class="text-text-1">Richard's weird questions</span>
+    </span>
+    <h1 id="title" class="heading-1">Survey form &amp;&nbsp;</h1>
+  </div>
+  <div class="aside-1 container-grid">
+    <span class="text-element">Other Infos</span>
+  </div>
+  <main id="survey-form" class="main container-grid">
+    <span class="text-element survey-top-description">
+      <span id="description" class="text-text-2 label-1">I'm going to ask few easy questions, let's see how easy..</span>
+    </span>
+    <label id="name" class="label label-2">Please type your name</label>
+    <input value="" name="text-name" type="text" class="input-1" placeholder="First and second name" required pattern="[A-Z]" required minlength="10" required maxlength="15">
+    <label id="email" class="label label-3">Please type your email</label>
+    <input name="email-name" type="email" class="email-1"placeholder="Your email" required pattern="[Aa-Zz]"required minlength="5" required maxlength="25" required>
+    <label id="number" class="label label-4">Please, tell us how old are you?</label>
+    <input value="" name="number-name" type="number" class="number-1"
+    min="12" max="100" step="1" 
+              placeholder="age"id="number" name="age" required maxlength="3" 
+                  pattern="\\d+">
+    <label class="label label-5">Please select answer which suits you the most</label>
+    <select class="select drop-down-1">
+      <option>Im living in Europe</option>
+      <option>Im living in Asia</option>
+      <option>Im living in America</option>
+      <option>Im living in Africa</option>
+      <option>Im living in Australia</option>
+    </select>
+    <label id="radio-buttons-label" class="label label-6" for="radio">How many languages you are speaking ?</label>
+    <div class="container-grid container-2">
+      <label class="radio" for="radio">
+        <input type="radio" value="1"name="option"><span>Just 1</span>
+      </label>
+      <label class="radio">
+        <input type="radio" value="2"name="option"><span>2/4</span>
+      </label>
+      <label class="radio">
+        <input type="radio" value="3" name="option"><span>More than 5</span>
+      </label>
+    </div>
+    <label class="label label-7">Which countries did you visit?</label>
+    <div id="checkbox" class="container-grid container-1">
+      <label class="checkbox">
+        <input type="checkbox" value="">
+        <span>Poland</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="">
+        <span>Slovakia</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="">
+        <span>Moldavia</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="">
+        <span>Bulgaria</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="">
+        <span>Greece</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="">
+        <span>England</span>
+      </label><label class="checkbox">
+        <input type="checkbox" value="">
+        <span>Spain</span>
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="">
+        <span>Italy</span>
+      </label>
+    </div>
+    <label id="submit-label" class="label label-1">If you have something to tell us, we would like to invite to say as, what you think!</label>
+    <textarea id="textarea" name="textarea-name" class="textarea-1" placeholder="write you thoughts"></textarea>
+    <button id="submit" type="button" class="btn">Submit</button>
+  </main>
+  <div class="aside-2 container-grid">
+    <span class="text-element">Aside-2</span>
+    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et metus.</p>
+  </div>
+  <div class="footer container-grid">
+    <span class="text-element">Footer</span>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/outofview.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
